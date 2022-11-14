@@ -17,14 +17,14 @@ export class EmployeeManager {
     }
 
     static editEmployee(id: number, employeeEdit: Employee): void {
-        // EmployeeManager.listEmployee = EmployeeManager.listEmployee.map(employee => employee.id === id)
-        // ? (...employeeEdit) as Employee : (...employee) as Employee
+        EmployeeManager.listEmployee = EmployeeManager.listEmployee.map(employee => employee.id === id
+            ? {...employeeEdit} as Employee : {...employee} as Employee )
 
-        for (let i = 0; i< EmployeeManager.listEmployee.length; i++) {
-            if (EmployeeManager.listEmployee[i].id === id) {
-                EmployeeManager.listEmployee[i] = employeeEdit
-            }
-        }
+        // for (let i = 0; i< EmployeeManager.listEmployee.length; i++) {
+        //     if (EmployeeManager.listEmployee[i].id === id) {
+        //         EmployeeManager.listEmployee[i] = employeeEdit
+        //     }
+        // }
     }
 
 }

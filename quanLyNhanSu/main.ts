@@ -13,3 +13,6 @@ EmployeeManager.editEmployee(2,employee3);
 console.log('-----------Sau khi edit-----------');
 EmployeeManager.display();
 
+// EmployeeManager.deleteEmployee(2);
+// console.log('-----------Sau khi xóa-----------');
+// EmployeeManager.display();
